@@ -1,0 +1,88 @@
+/*general*/
+.container-fluid, nav, .main, .review {background-color: #000;}
+.main, .review {border-radius: 10px;}
+.main {margin-top: 5px;}
+nav {width: 100%; border-radius: 5px;}
+.nav-item {padding: 0; line-height: 0.5em;}
+h1 {font: 1.9em 'Droid Serif', serif; color: #A40606;}
+h2 {color: #fff; margin: 20px 0 0 345px;}
+img {margin: -37px 10px 0 35px;}
+
+/*reviews*/
+.fa-bars {color: #fff;}
+.fa-star {color: yellow; margin: 2px;}
+p, a {color: #fff;}
+.review {margin-top: 5px; padding-bottom: 20px;}
+.review div {margin: 20px 0 0 34px;} 
+.review span {margin-right: 3px;}
+#review2 {margin-top: 7px;}
+#review3 {margin-top: 14px;}
+
+/*phone css*/
+@media screen and (max-width : 767px){
+    #samanta {display: none;}
+    .container-fluid {padding: 27px;}
+    .header {margin-top: -55px; margin-left: -111px;}
+    h1 {padding: 12px 0 0 102px;}
+    nav {margin-top: 29px;}
+    nav, .main, .review {width: 510px; margin-left: 5px;}
+    .main {margin-top: 7px; padding-bottom: 20px;}
+    .img {display: none;}
+    h2 {margin: 20px 0 0 33px;}
+    .paragraph {line-height: 1.5; width: 440px;}
+    .first {margin: 8px 0 0 35px;}
+    .second {margin: 15px 0 0 36px;}
+    .btn-sm {display: none;}
+    .btn-lg {margin: 16px 0 0 35px; padding-left: 143px; padding-right: 146px;}
+    .review {margin-top: 7px;}
+    .review p {width: 440px; vertical-align: top; margin-left: 3px;}
+}
+
+/*iPad portrait css*/
+@media screen and (min-width : 768px) and (max-width : 991px){
+    #samanta {display: none;}
+    .container-fluid {padding:39px;}
+    .header {margin-top: -76px; margin-left: -134px;}
+    h1 {padding: 22px 0 0 134px; font-size: 2em;}
+    nav {margin-top: 40px;}
+    nav, .main, .review {margin-left: 15px; width: 690px;}
+    .first {margin-top: 10px; width: 655px;} 
+    .second {margin: 5px 0 0 35px; width: 620px;}
+    .btn-sm {display: none;}
+    .btn-lg {margin: 16px 0 20px 35px; padding-right:237px; padding-left: 233px;}
+    .review div {width: 600px;}
+}
+
+/*iPad landscape css*/
+@media screen and (min-width : 992px) and (max-width : 1199px){
+    .container-fluid {padding: 76px;}
+    #samanta {margin-left: 115px; margin-top: 0px;}
+    .header {margin-top: -153px; margin-left: -115px;}
+    h1 {font-size: 2.5em; position: relative; top: 100px; left: 15px;}
+    nav, .main, .review {margin-left: 15px; width: 930px;}
+    nav {margin-top: 30px;}
+    .first {margin-top: 10px; width: 890px;} 
+    .second {margin: 5px 0 0 35px; width: 860px;}
+    .btn-sm {display: none;}
+    .btn-lg {margin: 10px 0 20px 35px; padding-right:357px; padding-left: 353px;}
+    .review div {width: 900px;}
+}
+
+/*desktop css*/
+@media screen and (min-width : 1200px){
+    body {background: url(../assets/images/winter-scene-web.jpg) -886px -507px; background-size: 3460px 2280px;}
+    .container-fluid {padding: 79px;}
+    .header {margin-top: -160px; margin-left: -50px;}
+    #samanta {margin-top: 2px;}
+    h1 {font-size: 3em; position: relative; left: 45px; top: 102px;}
+    nav, .main, .review {width: 1110px;}
+    nav {margin-top: 35px;}
+    .main {padding-bottom: 20px;}
+    .first {margin-top: 10px; width: 1080px;} 
+    .second {margin: 5px 0 0 35px; width: 1040px;}
+    .btn-lg {display: none;}
+    .btn-sm {margin-top: 15px; padding-top: 1px;}
+    .review div {width: 1040px;}
+}
+
+

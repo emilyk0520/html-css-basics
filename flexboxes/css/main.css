@@ -1,0 +1,26 @@
+.container {margin: 0 auto;
+            display: flex;
+            width: 1034px;
+            flex-wrap: wrap;}
+.item {border: 2px solid blue;
+       border-radius: 10px;
+       margin: 5px;}
+#item1 {width: 1034px; height: 200px;}
+#item2 {width: 1034px; height: 50px;}
+.middlesection {display: flex;
+                width: 1034px;
+                justify-content: space-between;}
+.leftcolumn {display: flex;
+             width: 1034px;
+             flex-wrap: wrap}
+#item3 {width: 590px; height: 200px; margin-bottom: 0px;}
+#item4 {width: 590px; height: 198px; margin-top: 0px;}
+.rightcolumn {display: flex;
+              align-items: flex-start;}
+#item5 {width: 400px; height: 401px;}
+.lastrow {display: flex;
+          width: 1034px;
+          justify-content: space-between;}
+#item6 {width: 290px; height: 198px;}
+#item7 {width: 290px; height: 198px;}
+#item8 {width: 290px; height: 198px;}

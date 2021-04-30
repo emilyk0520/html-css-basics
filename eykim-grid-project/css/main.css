@@ -1,0 +1,110 @@
+/* general */
+body{
+    font: 16px/1.5 Arial;
+    margin: 0;
+    padding: 0;
+}
+
+aside ul, aside ul li, footer ul, footer ul li{
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* wrapper */
+#wrapper {
+    width: 1024px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "header header"
+                         "main aside"
+                         "article article"
+                         "footer footer";
+}
+
+/* header */
+header {
+    height: 400px;
+    border: 1px solid blue;
+    background: url(../images/officesim_header.jpg) no-repeat 50% 0;
+    border-radius: 5px;
+    grid-area: header;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #000;
+    padding: 270px 20px;
+}
+
+/* main */
+main {
+    width: 704px;
+    grid-area: main;
+}
+
+aside {
+    width: 287px;
+    height: 316px;
+    background: #eee;
+    padding: 0 10px;
+    margin-top: 8px;
+    grid-area: aside;
+    justify-self: end;
+}
+/* articles */
+article {
+    width: 95%;
+}
+
+.articles {
+    grid-area: article;
+    display: grid;
+    grid-template-areas: "article1 article2 article3";
+    width: 1000px;
+}
+
+.article1 {
+    grid-area: article1;
+}
+
+.article2 {
+    grid-area: article2;
+}
+    
+.article3 {
+    grid-area: article3;
+}
+
+.article1, .article2, .article3 {width: 333px;}
+
+/* footer */
+footer {
+    border-radius: 5px;
+    height: 150px;
+    background: #000;
+    color: #fff;
+    grid-area: footer;
+    display: grid;
+    grid-template-areas: "left right";
+}
+
+footer h3 {
+    margin: 18.72px 0 0 0;
+}
+
+footer #left {
+    grid-area: left;
+    justify-self: start;
+    margin-left: 20px;
+}
+
+footer #right {
+    grid-area: right;
+    justify-self: end;
+    margin-right: 20px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        input, textarea {
+            margin-top: 10px;
+        }
+        label[for='namelist']{
+            display: block;
+            margin-top: 20px;
+        }
+    </style>
+    <title>jQuery Project</title>
+</head>
+<body>
+    <main class="container">
+        <h1>Instructions</h1>
+        <p>Enter a first name space then last name into the box and click "Add Name", the name will be added to the textarea box in the following format "lastname, firstname".  All names will be sorted alphabetically by last name then first name.</p>
+        <p>We will assume the user enters a first name space then last name correctly.  We will not be checking for errors.</p>
+
+        <p>Clear Names will clear all the names from the text area.</p>
+
+        <label for="name">Enter Name</label>
+        <input type="text" name="name" id="name" class="form-control">
+        <input type="button" id="addname" class="btn btn-primary" value="Add Name">
+        <input type="button" id="clearname" class="btn btn-danger" value="Clear Names">
+
+        <label for="namelist">Name List</label>
+        <textarea name="namelist" id="namelist" class="form-control" cols="30" rows="10"></textarea>
+
+    </main>
+    <script src="js/jquery3.4.0.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

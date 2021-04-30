@@ -1,0 +1,96 @@
+/*general*/
+* {margin: 0; padding: 0;}
+header {display: block;}
+body {font: 100%/1.5 sans-serif; height: 1112px;}
+
+/*wrapper*/
+#wrapper {width: 1150px; margin: 0 auto;
+          background-color: #F7F8F2;
+          overflow: hidden;}
+
+/*header*/ 
+header {height: 82px;}
+header h1 {font: 2em sans-serif; 
+    color: #fff; 
+    padding: 15px 40px; 
+    width: 103px; 
+    background: #BD3B21; 
+    position: relative; 
+    left: 116px; top: 25px;
+    text-align: center;}
+header p {font: italic 1.1em sans-serif; 
+          display: inline-block;
+          position: relative; 
+          right: -783px; top: -21px;}
+header p span {color: #E16464;}
+
+/*nav*/
+nav {background-color: #EBEAD9;  
+     position: relative; top: 3px;}
+nav li {display: inline-block; 
+        font: 1.1em sans-serif; 
+        padding: 20px 0; border-left: 1px solid #fff; }
+nav li a {color: #000; text-decoration: none; text-align: left;}
+nav ul {width: 1150px;}
+.filler {width: 110px;}
+.home {width: 179px;}
+.about {width: 178px;}
+.services {width: 177px;}
+.solutions {width: 176px;}
+.contacts {border-right: 1px solid #fff;}
+#home {margin: 0 0 0 134px; position: relative; top: -2px; left: -65px;}
+#about {margin: 0 0 0 132px; position: relative; top: -2px; left: -65px;}
+#services {margin: 0 0 0 120px; position: relative; top: -2px; left: -65px;}
+#solutions {margin: 0 0 0 109px; position: relative; top: -2px; left: -55px;}
+#contacts {margin: 0 0 0 108px; position: relative; top: -2px; left: -51px;}
+nav ul li a:hover {text-decoration: underline;}
+
+/*banner area*/
+#banner h2 {font: italic 1.6em times-new-roman; color: #C8C1B8; 
+           padding: 66px 0 0 151px;} 
+#banner h2 span {font: 3.1em times-new-roman; 
+                color: #000; display: block; 
+                position: relative; top: -11px; left: -3px;}
+#banner span+span {font: 3.1em times-new-roman; color: #E16464;
+                   position: relative; top: -46px; left: 68px;}
+#banner span+span+span {font: 1em times-new-roman; color: #000; 
+                        position: relative; top: -57px; left: 69px;}
+img {position: relative; top: -306px; left: 584px;}
+#banner {height: 328px;}
+
+/*main*/
+#testimonials {background-color: #EBEAD9; height: 243px;}
+/*left*/
+h2 {font: normal 1.5em times-new-roman; padding: 32px 0 0 11px;}
+h3 {font: italic bold 1.2em times-new-roman; padding: 8px 0 0 10px;}
+h3+p {padding: 2px 0 0 12px; display: block; width: 540px;}
+/*right*/
+#right {position: relative; top: -152px; left: 582px; }
+
+/*links area*/
+#bottom {height: 363px;}
+/*new solutions*/
+#newsolutions h3 {font: 1.5em times-new-roman; padding: 14px 0 0 11px;}
+#newsolutions ul li {font: 1.1em sans-serif; list-style: none; padding: 3px 0 0 10px;}
+#newsolutions ul li a {color: #E16464; }
+/*popular services*/
+#popularservices {position: relative; top: -163px; left: 287px;}
+#popularservices h3 {font: 1.5em times-new-roman; padding: 15px 0 0 11px;}
+#popularservices ul li {font: 1.1em sans-serif; list-style: none; padding: 3px 0 0 10px;}
+#popularservices ul li a {color: #E16464; }
+/*press releases*/
+#pressreleases {position: relative; top: -326px; left: 574px;}
+#pressreleases h3 {font: 1.5em times-new-roman; padding: 15px 0 0 11px;}
+#pressreleases ul li {font: 1.1em sans-serif; list-style: none; padding: 3px 0 0 10px;}
+#pressreleases ul li a {color: #E16464; }
+/*contact us*/
+#contactform form {position: relative; top: -479px; left: 871px;}
+#contactform h3 {position: relative; top: -483px; left: 862px; font: 1.5em times-new-roman; }
+form {width: 100px;}
+input {width: 238px; height: 20px;}
+textarea {width: 238px; height: 105px;}
+label+input {width: 91px;}
+
+/*footer*/
+footer {width: 1150px; height: 32px; background-color: #FFF;}
+footer p {text-align: center; padding: 5px 0 0 0;}

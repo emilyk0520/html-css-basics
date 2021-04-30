@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>JavaScript Project</title>
+        <!--below is a script which allows IE 8 to understand HTML 5 elements.-->
+        <!--[if lt IE 9]>
+        <script>
+        var elementsArray = ['abbr', 'article', 'aside', 'audio', 'bdi', 'canvas', 'data', 'datalist', 'details', 'figcaption', 'figure', 'footer', 'header', 'main', 'mark', 'meter', 'nav', 'output', 'progress', 'section', 'summary', 'template', 'time', 'video'];
+        var len = elementsArray.length;
+        for(i = 0; i < len; i++){
+          document.createElement(elementsArray[i]);
+        }
+        </script>
+        <![endif]-->
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+    <div id="wrapper">
+        <header>
+            <h1>Knights Chess Club</h1>
+            <h2 id="subheading">for those <span>who live and breathe chess</span></h2>
+            <div id="contacts">
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">contact us</a></li>
+                </ul>
+                <p id="tollfree">Toll Free: 086 001 5268</p>
+            </div>
+            <form method= "post" action= "#" id="searchbar">
+                <input type="image" src="assets/images/search.gif" alt="S submit button" id="searchbutton">
+                <input type="text" name="textbar" id="txtbox">
+            </form>
+        </header>
+        <main>
+            <img src="assets/images/chessKnightLogo.png" alt="Chess Knight Logo">
+            <nav>
+                <ul>
+                    <li><a href="#" id="home">home</a></li>
+                    <li><a href="#" id="about">about</a></li>
+                    <li><a href="#" id="portfolios">member's portfolios</a></li>
+                    <li><p id="member">become a member</p></li>
+                    <li><a href="#" id="contactus">contact us</a></li>
+                </ul>
+            </nav>
+            <div id="maintxt">
+                <h2>Instructions</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo dui nec
+                    ante semper vitae vulputate velit blandit. Sed tristique lacus et leo mattis egestas. Etiam
+                    volutpat nulla metus. Donec sit amet dapibus velit. Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Vestibulum commodo dui nec ante semper vitae vulputate
+                    velit blandit. Sed tristique lacus et leo mattis egestas. Etiam volutpat nulla metus. Donec
+                    sit amet dapibus velit.</p>
+            </div>
+            <div id="membershipform">
+                <form method= "post" action= "#" id= "mainform">
+                    <fieldset>
+                        <legend>Membership Form</legend>
+                        <label for="fname" class="label firstn"><span>F</span>irst Name:</label>
+                            <input type="text" name="fname" id="fname" class="fields">
+                        <label for="lname" class="label lastn"><span>L</span>ast Name:</label>
+                            <input type="text" name="lname" id="lname" class="fields">
+                        <label for="address" class="label addrss"><span>A</span>ddress:</label>
+                            <input type="text" name="address" id="address" class="fields">
+                        <label for="city" class="label cty"><span>C</span>ity:</label>
+                            <input type="text" name="city" id="city" class="fields">
+                        <label for="state" class="st"><span>S</span>t:</label>
+                            <select id="state" name="state">
+                                <option value="ohio">OH</option>
+                                <option value="michigan" selected>MI</option>
+                                <option value="pennsylvania">PA</option>
+                                <option value="nevada">NV</option>
+                                <option value="texas">TX</option>
+                                <option value="wisconsin">WI</option>
+                            </select>
+                        <label for="zipcode" class="label zip"><span>Z</span>ip:</label>
+                            <input type="text" name="zipcode" id="zipcode" class="fields">
+                        <label for="email" class="label mail"><span>E</span>mail:</label>
+                            <input type="text" name="email" id="email" class="fields">
+                        <label for="phonenumber" class="label phone" ><span>P</span>hone:</label>
+                            <input type="text" name="phone" id="phonenumber" class="fields">
+                        <input type="submit" value="Submit Form" id="submitbutton">
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        <div id="articlesection">
+            <article id="one">
+                <h3>Article One</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo dui nec
+                    ante semper vitae vulputate velit blandit. Sed tristique lacus et leo mattis egestas. Etiam
+                    volutpat nulla metus. Donec sit amet dapibus velit.</p>
+            </article>
+            <article id="two">
+                <h3>Article Two</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo dui nec
+                    ante semper vitae vulputate velit blandit. Sed tristique lacus et leo mattis egestas. Etiam
+                    volutpat nulla metus. Donec sit amet dapibus velit.</p>
+            </article>
+            <article id="three">
+                <h3>Article Three</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo dui nec
+                    ante semper vitae vulputate velit blandit. Sed tristique lacus et leo mattis egestas. Etiam
+                    volutpat nulla metus. Donec sit amet dapibus velit.</p>
+            </article>
+        </div>
+    </div>
+    <script src="js/main.js">
+</script>
+    </body>
+</html>

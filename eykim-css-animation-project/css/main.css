@@ -1,0 +1,26 @@
+html {background-color: blue;}
+
+#window {margin: auto;
+         width: 1000px; height: 200px;
+         background-color: #fff;
+         position: relative;
+         overflow: hidden;
+}
+
+#bird {width: 60px;
+       height: 55px;
+       position: absolute;
+       margin-top: 70px;
+       background: transparent url(../assets/birds_strip.png) no-repeat;
+       animation: flap 0.23s steps(14) infinite, flyAcross 4s linear infinite;
+}
+
+@keyframes flap{
+    from {background-position: 0px;}
+    to {background-position: -840px;}
+}
+
+@keyframes flyAcross{
+    from {transform: translateX(-60px);}
+    to {transform: translateX(1000px);}
+}

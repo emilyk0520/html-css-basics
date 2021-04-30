@@ -1,0 +1,88 @@
+/*general*/
+* {margin: 0; padding: 0;}
+header {display: block;}
+body {font: 75%/1.3 Helvetica, sans-serif;}
+
+/*wrapper*/
+#wrapper {width: 1024px; margin: 0 auto;
+          background-color: #fff;}
+
+/*header*/
+header {height: 110px;
+        background-color: #000;}
+h1 {color: #fff;
+    font-size: 3em;
+    padding: 24px 0 0 30px;}
+#subheading {display: block; color: #E20448; font-size: 1.4em;
+      letter-spacing: 0.5px;
+      padding: 2px 29px;}
+#subheading span {letter-spacing: 1px;
+        padding-left: 3px;}
+#contacts, #searchbar {position: relative;}
+#contacts {top: -71px; left: 841px;}
+#contacts a {color: #E20448; font-size: 1.2em;}
+#tollfree {color: #fff; font-size: 1.1em;}
+#contacts li {display: inline; list-style: none;}
+#contacts li:first-child {border-right: 1px solid #E20448; padding: 0 5px 0 2px;}
+#contacts li+li {padding-left: 3px;} 
+#searchbar {top: -67px; left: 844px;}
+#txtbox {position: absolute; width: 110px; padding-top: 1px;}
+
+/*main*/
+main {background: url("../assets/images/body_02.jpg") no-repeat; height: 540px;}
+img, #maintxt {position: relative;}
+img {top: 12px; left: 70px;}
+#maintxt {top: -244px; left: 279px;}
+main h2 {font-size: 1.6em; color: #E20448;}
+h2+p {width: 200px;}
+
+/*nav*/
+nav, nav a, #member {position: relative;}
+nav {top: 32px; left: 36px;}
+nav li {list-style: none; background: url("../assets/images/nav.png") no-repeat; 
+        padding-bottom: 9px; width: 172px;}
+nav a, #member {text-decoration: none; color: #fff; font-size: 1.3em; top: 6px;}
+#home, #about {left: 67px;}
+#portfolios {left: 18px;}
+#member {left: 21px;}
+#contactus {left: 50px;}
+
+/*form*/
+fieldset {width: 365px; height: 338px; top: -459px; left: 574px; 
+        border: solid 1px #00C6ff; padding-left: 10px;} 
+legend {color: #00C6ff; font-size: 1.4em; font-weight: bold; padding-left: 2px;}
+#membershipform label {font-size: 1.2em; letter-spacing: 1px;}
+#membershipform label span {text-decoration: underline;}
+#membershipform label+input, #state select {display: block;}
+/*positioning*/
+fieldset, .label, .fields, .st, #state, #submitbutton {position: relative;}
+.firstn {top: 25px;}
+.fields {height: 20px;}
+#fname, #lname, #city {width: 161px;}
+#fname {top: 34px;}
+.lastn {top: -17px; left: 174px;}
+#lname {top: -8px; left: 174px;}
+.addrss {top: 6px;}
+#address {width: 335px; top: 15px;}
+.cty {top: 29px;}
+#city {top: 38px;}
+.st {top: -13px; left: 174px;}
+#state {top: 14px; left: 150px;}
+.zip {top: -13px; left: 157px;}
+#zipcode {width: 100px; top: -5px; left: 232px; }
+.mail {top: 9px;}
+#email {width: 225px; top: 18px;}
+.phone {top: -33px; left: 239px;}
+#phonenumber {width: 100px; top: -24px; left: 239px;}
+#submitbutton {top: -5px;}
+
+/*articles*/
+#articlesection {height: 219px; background-color: #000;}
+h3 {color: #E20448; font-weight: normal;}
+#two h3 {color: #00C6ff;}
+#articlesection p {color: #fff;}
+article {width: 210px; display: inline-block;}
+#one, #two, #three {position: relative; top: 34px;}
+#one {left: 44px;}
+#two {left: 196px;}
+#three {left: 347px;}
