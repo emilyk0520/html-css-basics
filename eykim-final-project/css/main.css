@@ -36,6 +36,7 @@
     .services .first .icons {left: 94px;}
     .services .second .icons {left: 85px;}
     .services h3 {font-size: 2.7em; text-align: center; margin-top: 142px; color: #000;} 
+    .services .box:hover, .services .box:focus {background-color: #76c38f;}
     h3+p {width: 170px; text-align: center; font-size: 1.08em; line-height: 1.38; margin: 16px 0 0 28px;}
 
     /*gallery*/

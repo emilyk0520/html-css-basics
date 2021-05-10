@@ -6,14 +6,11 @@ const myScript = {
 
     toggleMenu : document.getElementById("toggle-menu"),
 
-    // reference to each box in services section
-    theServicesElements : document.querySelectorAll("a.box"),
+    // reference to services section
+    servicesArea : document.querySelector(".services"),
 
-    icons : document.querySelectorAll("div.icons span"),
-    images : document.querySelectorAll("a.galleryimage span.background"),
-
-    // reference to each image in gallery section
-    theGalleryElements : document.querySelectorAll("a.galleryimage"),
+    // reference to gallery section
+    galleryArea : document.querySelector(".gallery"),
 
     //runs media query min-width:768px to see if window screen size fits query and returns true or false 
     screensize : window.matchMedia ("(min-width: 768px)"),
@@ -22,134 +19,113 @@ const myScript = {
     init : function(){
 
         this.toggleButton.addEventListener("click", myScript.toggle); //adds toggle function to toggle button with event handler
- 
-        for (var i=0; i< myScript.theServicesElements.length; i++){
-            myScript.theServicesElements[i].addEventListener("mouseover", myScript.servicesRollover);//adds rollover function on mouseover to each box of services section
-            myScript.theServicesElements[i].addEventListener("mouseout", myScript.servicesRevert);//adds revert function on mouseout to each box of services section
-        }
 
-        for (var i=0; i < myScript.theGalleryElements.length; i++){
-            myScript.theGalleryElements[i].addEventListener("mouseover", myScript.galleryRollover, false);//adds rollover function on mouseover to each image of gallery section
-            myScript.theGalleryElements[i].addEventListener("mouseout", myScript.galleryRevert, false);//adds revert function on mouseout to each image of gallery section
-        }
+        // adds event listeners for rollover effects for services
+        this.servicesArea.addEventListener("mouseover", myScript.servicesRollover);
+        this.servicesArea.addEventListener("mouseout", myScript.servicesRevert);
+
+        // adds event listeners for rollover effects for gallery
+        this.galleryArea.addEventListener("mouseover", myScript.galleryRollover, false);
+        this.galleryArea.addEventListener("mouseout", myScript.galleryRevert, false);
+
         
         if (matchMedia) {
-            myScript.screensize.addListener(myScript.WidthChange);//adds listener function so that code reacts to changes in window
+            myScript.screensize.addListener(myScript.WidthChange); //adds listener function so that code reacts to changes in window
             }
     },
 
-    servicesRollover : function(){
-    
-        this.setAttribute("style", "background-color: #76c38f");
+    servicesRollover : function(evt){
 
-        switch (this.id) {
-            case 'firstBox':
-                myScript.icons[0].style = "background-image: url(assets/icons/globe-white.png)";
+        const serviceBox = myScript.findTarget(evt, 'a', this);
+        if (!serviceBox){ return; }
+
+        const theIcon = serviceBox.firstElementChild.firstElementChild;
+        if (!theIcon){ return; }
+
+        switch (theIcon.id) {
+            case 'globe':
+                theIcon.style = "background-image: url(assets/icons/globe-white.png)";
                 break;
 
-            case 'secondBox':
-                myScript.icons[1].style = "background-image: url(assets/icons/sun-white.png)";
+            case 'sun':
+                theIcon.style = "background-image: url(assets/icons/sun-white.png)";
                 break;
 
-            case 'thirdBox':
-                myScript.icons[2].style = "background-image: url(assets/icons/network-white.png)";
+            case 'network':
+                theIcon.style = "background-image: url(assets/icons/network-white.png)";
                 break;
 
-            case 'fourthBox':
-                    myScript.icons[3].style = "background-image: url(assets/icons/medal-white.png)";
-                    break;
-
+            case 'medal':
+                theIcon.style = "background-image: url(assets/icons/medal-white.png)";
+                break;
         }
 
     },
 
-    servicesRevert : function(){
+    servicesRevert : function(evt){
 
-        this.removeAttribute("style");
+        const serviceBox = myScript.findTarget(evt, 'a', this);
+        if (!serviceBox){ return; }
 
-        switch (this.id) {
-            case 'firstBox':
-                myScript.icons[0].style = "";
-                break;
+        const theIcon = serviceBox.firstElementChild.firstElementChild;
+        if (!theIcon){ return; }
 
-            case 'secondBox':
-                myScript.icons[1].style = "";
-                break;
-
-            case 'thirdBox':
-                myScript.icons[2].style = "";
-                break;
-
-            case 'fourthBox':
-                myScript.icons[3].style = "";
-                break;
-
-        }
+        theIcon.style = "";
         
     },
 
-    galleryRollover : function(){
-        this.lastElementChild.style = "visibility: hidden";
-        
-        switch (this.className) {
-            case 'galleryimage first':
-                myScript.images[0].style = "background-image: url(../assets/images/golden-retrievers.gif)";
+    galleryRollover : function(evt){
+
+        const galleryBox = myScript.findTarget(evt, 'a', this);
+        if (!galleryBox) { return; }
+
+        galleryBox.lastElementChild.style = "visibility: hidden;"
+
+        const theImage = galleryBox.firstElementChild.firstElementChild;
+        if (!theImage) { return; }
+
+        switch (theImage.id) {
+            case 'image2':
+                theImage.style = "background-image: url(assets/images/golden-retrievers.gif)";
                 break;
 
-            case 'galleryimage second':
-                myScript.images[1].style = "background-image: url(../assets/images/beach-dog.gif)";
+            case 'image3':
+                theImage.style = "background-image: url(assets/images/beach-dog.gif)";
                 break;
 
-            case 'galleryimage third':
-                myScript.images[2].style = "background-image: url(../assets/images/sleeping-puppies.gif)";
+            case 'image4':
+                theImage.style = "background-image: url(assets/images/sleeping-puppies.gif)";
                 break;
 
-            case 'galleryimage fourth':
-                myScript.images[3].style = "background-image: url(../assets/images/walking-dog.gif)";
+            case 'image5':
+                theImage.style = "background-image: url(assets/images/walking-dog.gif)";
                 break;
 
-            case 'galleryimage fifth':
-                myScript.images[4].style = "background-image: url(../assets/images/glasses-dog.gif)";
+            case 'image6':
+                theImage.style = "background-image: url(assets/images/glasses-dog.gif)";
                 break;
 
 
-            case 'galleryimage sixth':
-                myScript.images[5].style = "background-image: url(../assets/images/yawning-dog.gif)";
+            case 'image7':
+                theImage.style = "background-image: url(assets/images/yawning-dog.gif)";
                 break;
 
         }
 
     },
 
-    galleryRevert : function(){
-        this.lastElementChild.style = "";
+    galleryRevert : function(evt){
         
-        switch (this.className) {
-            case 'galleryimage first':
-                myScript.images[0].style = "";
-                break;
+        const galleryBox = myScript.findTarget(evt, 'a', this);
+        if (!galleryBox) { return; }
 
-            case 'galleryimage second':
-                myScript.images[1].style = "";
-                break;
+        galleryBox.lastElementChild.style = "";
 
-            case 'galleryimage third':
-                myScript.images[2].style = "";
-                break;
+        const theImage = galleryBox.firstElementChild.firstElementChild;
+        if (!theImage) { return; }
 
-            case 'galleryimage fourth':
-                myScript.images[3].style = "";
-                break;
+        theImage.style = "";
 
-            case 'galleryimage fifth':
-                myScript.images[4].style = "";
-                break;
-
-
-            case 'galleryimage sixth':
-                myScript.images[5].style = "";
-                break;
-        }
     },
 
     WidthChange : function(screensize) {
@@ -171,6 +147,15 @@ const myScript = {
             document.querySelectorAll("ul#mainnav>li>a")[5].setAttribute("style", "border-radius: 0 0 10px 10px;")
         }
     },
+
+    findTarget : function(evt, targetNode, container) {
+        let currentNode = evt.target;
+        while (currentNode && currentNode !== container) {  
+          if (currentNode.nodeName.toLowerCase() === targetNode.toLowerCase()) { return currentNode; }
+          else { currentNode = currentNode.parentNode; }
+        }
+        return false;
+    }
 
 }
 
