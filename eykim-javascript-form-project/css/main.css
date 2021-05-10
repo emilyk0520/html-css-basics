@@ -75,6 +75,9 @@ fieldset, .label, .fields, .st, #state, #submitbutton {position: relative;}
 .phone {top: -33px; left: 239px;}
 #phonenumber {width: 100px; top: -24px; left: 239px;}
 #submitbutton {top: -5px;}
+/*behavior*/
+fieldset input:focus {background-color: #0FF;}
+fieldset label p.warning {display: inline; color: red; font-size: 0.7em; padding-left: 4px}
 
 /*articles*/
 #articlesection {height: 219px; background-color: #000;}
