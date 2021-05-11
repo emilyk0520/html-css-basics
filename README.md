@@ -1,0 +1,1 @@
+This is the coursework I did for Web Development II that focused on more advanced CSS and HTML concepts as well as the introduction of basic JavaScript.
